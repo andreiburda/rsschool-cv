@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+}
+.container {
+  width: 980px;
+  margin: auto;
+  box-shadow: 0 0 10px;
+}
+h2 {
+  color: rgb(13.7, 22.7, 37.3);
+  text-decoration: underline;
+}
+h4 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+/* ЛЕВАЯ КОЛОНКА */
+.left-column {
+  background: rgb(13.7, 22.7, 37.3);
+  color: white;
+  padding: 10px 10px;
+}
+.photo {
+  margin: auto;
+}
+.photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.contacts {
+  color: rgb(13.7, 22.7, 37.3);
+}
+.phone,
+.email,
+.telegram {
+  background: white;
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+.links a,
+.telegram a {
+  text-decoration: none;
+  color: inherit;
+}
+.linkedin,
+.instagram,
+.github {
+  display: flex;
+  align-items: center;
+}
+.links img {
+  margin-right: 10px;
+}
+/* ПРАВАЯ КОЛОНКА */
+.right-column {
+  padding: 0px 10px;
+}
+.education {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "education-header education-header"
+    "education-marketing-years education-marketing-description"
+    "education-metallurgy-years education-metallurgy-description";
+}
+.education-header {
+  grid-area: education-header;
+}
+.education-marketing-years {
+  grid-area: education-marketing-years;
+}
+.education-marketing-description {
+  grid-area: education-marketing-description;
+}
+.education-metallurgy-years {
+  grid-area: education-metallurgy-years;
+}
+.education-metallurgy-description {
+  grid-area: education-metallurgy-description;
+}
+.cources-htmlbook,
+.cources-codebasics,
+.cources-w3school,
+.cources-freecodecamp,
+.cources-learnlavascript,
+.cources-rsschool {
+  display: flex;
+  align-items: center;
+}
+.cources img {
+  margin-right: 20px;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: cornsilk;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
